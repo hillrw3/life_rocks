@@ -1,7 +1,13 @@
 class MainController < ApplicationController
+  before_action :gif_info, only: [:create]
 
   def index
 
+  end
+
+  def create
+    
+    redirect_to root_path
   end
 
   def gif_info(search_term)
