@@ -9,7 +9,7 @@ class MainsController < ApplicationController
 
   def show
     if Main.last.id % 3 == 0
-      @reason = 'photo.JPG'
+      @reason = 'bartender.jpg'
     else
       @reason = gif_info(Main.last.reason)["data"][0]["link"]
     end
