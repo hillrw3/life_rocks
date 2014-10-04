@@ -2,14 +2,17 @@ require "json"
 require "open-uri"
 
 class MainsController < ApplicationController
-  # before_action :gif_info, only: [:create]
 
   def index
     @reason = Main.new
   end
 
   def show
-    @reason = gif_info(Main.last.reason)
+    if Main.last.id % 3 == 0
+      @reason = 'photo.JPG'
+    else
+      @reason = gif_info(Main.last.reason)["data"][0]["link"]
+    end
   end
 
   def create
