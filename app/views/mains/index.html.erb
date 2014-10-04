@@ -1,0 +1,23 @@
+<div class="col-lg-12">
+  <img src="https://lh5.googleusercontent.com/OVonmmNGg3T0XB_78-Pje16gOVTIc-ySjGEY7xVvTprmk7bmCVqpjVDGxzcLJb49Ilt_orMtROuJk2FO459CE219l35srx4P=w1416-h659"/></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for @reason do |f|  %>
+        <div class="form-group">
+          <%= f.label :reason, "Why does life rock?" %>
+          <br/>
+          <%= f.text_field :reason  %>
+        </div>
+          <%= f.submit "GO ROCK" %>
+        <% end %>
+    </div>
+  </div>
+</div>
