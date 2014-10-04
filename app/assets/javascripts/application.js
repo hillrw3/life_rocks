@@ -15,4 +15,36 @@
 //= require_tree .
 
 
-
+//var imgObj = null;
+//var duration = 100;//in milliseconds
+//
+//function init(){
+//  //may need to change this for our image
+//  imgObj = document.getElementById('myImg');
+//  imgObj.style.position= 'relative';
+//  imgObj.style.left = '0px';
+//  imgObj.style.right = '0px';
+//  vibrate();
+//}
+//
+//function moveRight(){
+//  imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+//}
+//
+////RYAN ADDED THIS FUNCTION
+//function moveLeft(){
+//  imgObj.style.right = parseInt(imgObj.style.right) + 10 + 'px';
+//}
+//
+////RYAN ADDED THIS FUNCTION
+////function vibrate(){
+////  while(true){
+////    setInterval(moveLeft(), duration);
+////    setInterval(moveRight(), duration);
+////    console.log("vibrate");
+////  }
+////}
+//
+//$(document).ready(function(){
+//  init();
+//});
